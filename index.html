@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <script>
+            function registration()
+	{
+		var nama= document.getElementById("t1").value;
+		var ttl= document.getElementById("t2").value;
+		var unit= document.getElementById("t3").value;
+		var desa= document.getElementById("t4").value;			
+		var kota= document.getElementById("t5").value;
+        var notelp= document.getElementById("t6").value;
+		var lomba= document.getElementById("t7").value;			
+		
+        //email id expression code
+		var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+		var letters = /^[A-Za-z]+$/;
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+		if(nama=='')
+		{
+			alert('Please enter your name');
+		}
+		else
+		{				                            
+               alert('Thank You for Login & You are Redirecting to Campuslife Website');
+			   // Redirecting to other page or webste code. 
+			   window.location = "http://www.campuslife.co.in"; 
+		}
+	}
+    </script>
+
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+	<!-- Main div code -->
+	<div id="main">
+	<div class="h-tag">
+	<h2>Formulir Pendaftaran</h2>
+    <h3>Pekan Olahraga dan Seni Guru TKA/TPA</h3>
+    <h4>Tahun 2020</h4>
+	</div>
+	<!-- create account div -->
+	<div class="login">
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+	<tr>
+	<td align="right">Nama Peserta :</td>
+	<td><input type="text" placeholder="Nama Peserta" id="t1" class="tb" /></td>
+	</tr>
+	<tr>
+	<td align="right">Tempat Tanggal Lahir :</td>
+	<td><input type="text" placeholder="Tempat Tanggal Lahir" id="t2" class="tb" /></td>
+	</tr>
+	<tr>
+	<td align="right">Utusan Unit TKA/TPA :</td>
+	<td><input type="text" placeholder="Utusan Unit TKA/TPA" id="t3" class="tb" /></td>
+	</tr>
+	<tr>
+	<td align="right">Kelurahan/Desa :</td>
+	<td><input type="text" placeholder="Kelurahan/Desa" id="t4" class="tb" /></td>
+	</tr>
+	<tr>
+	<td align="right">Kecamatan :</td>
+	<td><input type="text" placeholder="Kecamatan" id="t5" class="tb" /></td>
+	</tr>
+    <tr>
+    <td align="right">Nomor Telpon :</td>
+    <td><input type="text" placeholder="Nomor Telpon" id="t6" class="tb" /></td>
+    </tr>
+    <tr>
+    <td align="right">Jenis Lomba :</td>
+    <td><input type="text" placeholder="Jenis Lomba" id="t7" class="tb" /></td>
+    </tr>
+	<tr>
+	<td></td>
+	<td>
+	
+	<input type="submit" value="Create Account" class="btn" onclick="registration()" /></td>
+	</tr>
+	</table>
+	</div>
+	<!-- create account box ending here.. -->
+	</div>
+	<!-- Main div ending here... -->
+	</body>
+</html>
